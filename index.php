@@ -18,34 +18,36 @@ $response=json_decode($response,true);
 
 $message=$response['entry'][0]['messaging'][0]['message']['text'];
 
-if($message=='hello'){
+if($message=='Hello!Neo KMS!'){
     $reply_message='{
         "messaging_type": "RESPONSE",
         "recipient": {
-          "id": "3443583338995846"
+          "id": "3244230802322471"
         },
         "message": {
-          "text": "hello, Do you need any Information"
+          "text": "Yes there. 1.If you want to know about available Program type PROGRAM 2.If you want yo know about schedule type SCHEDULE "
         }
       }' ;
 
       send_reply($access_token,$reply_message);
     
 }
-if($message=='hi'){
+if($message=='PROGRAM'){
     $reply_message='{
         "messaging_type": "RESPONSE",
         "recipient": {
-          "id": "3443583338995846"
+          "id": "3244230802322471"
         },
         "message": {
-          "text": "Please ask your query!"
+          "text": "There are 14 new program.For details contact #Phone number-1234567"
         }
       }' ;
 
       send_reply($access_token,$reply_message);
     
 }
+
+
 
 
    function send_reply($access_token='',$reply='')
