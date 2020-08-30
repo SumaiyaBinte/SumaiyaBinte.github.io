@@ -18,7 +18,7 @@ $response=json_decode($response,true);
 
 $message=$response['entry'][0]['messaging'][0]['message']['text'];
 
-if($message=='Hello!Neo KMS!'){
+if($message=='Hello!NEO KMS!'){
     $reply_message='{
         "messaging_type": "RESPONSE",
         "recipient": {
