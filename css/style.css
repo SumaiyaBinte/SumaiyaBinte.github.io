@@ -36,7 +36,9 @@ body {
    margin:4px 2px;
    cursor: pointer;
 }
-.fb_customer_chat_bubble_pop_in{top:20px!important}
+.fb_customer_chat_bounce_out{
+    z-index:-1 !important;
+}
 
 @media only screen and(max-width: 750px) {
     .background {
