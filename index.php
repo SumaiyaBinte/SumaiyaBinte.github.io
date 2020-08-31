@@ -18,7 +18,20 @@ $response=json_decode($response,true);
 
 $message=$response['entry'][0]['messaging'][0]['message']['text'];
 
+if($message=='Hello!NEO KMS'){
+    $reply_message='{
+        "messaging_type": "RESPONSE",
+        "recipient": {
+          "id": "3244230802322471"
+        },
+        "message": {
+          "text": "Yes there. 1.If you want to know about available Program type PROGRAM 2.If you want yo know about schedule type SCHEDULE "
+        }
+      }' ;
 
+      send_reply($access_token,$reply_message);
+    
+}
 if($message=='PROGRAM'){
     $reply_message='{
         "messaging_type": "RESPONSE",
@@ -33,7 +46,20 @@ if($message=='PROGRAM'){
       send_reply($access_token,$reply_message);
     
 }
+if($message=='PROGRAM'){
+    $reply_message='{
+        "messaging_type": "RESPONSE",
+        "recipient": {
+          "id": "3244230802322471"
+        },
+        "message": {
+          "text": "Saturday and Sunday is weekends.To know more about schedule contact #123456"
+        }
+      }' ;
 
+      send_reply($access_token,$reply_message);
+    
+}
 
 
    function send_reply($access_token='',$reply='')
