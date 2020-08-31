@@ -25,7 +25,7 @@ if($message=='Hello!NEO KMS'){
           "id": "3244230802322471"
         },
         "message": {
-          "text": "Yes there. 1.If you want to know about available Program type PROGRAM 2.If you want yo know about schedule type SCHEDULE "
+          "text": "Yes there. 1.If you want to know about available Program, type PROGRAM 2.If you want to know about schedule, type SCHEDULE "
         }
       }' ;
 
