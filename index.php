@@ -33,20 +33,6 @@ if($message=='PROGRAM'){
       send_reply($access_token,$reply_message);
     
 }
-if($message=='SCHEDULE'){
-    $reply_message='{
-        "messaging_type": "RESPONSE",
-        "recipient": {
-          "id": "3244230802322471"
-        },
-        "message": {
-          "text": "Saturday and Sunday is our weekends.For details Contact #1234567 "
-        }
-      }' ;
-
-      send_reply($access_token,$reply_message);
-    
-}
 
 
 
