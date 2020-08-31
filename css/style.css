@@ -36,7 +36,7 @@ body {
    margin:4px 2px;
    cursor: pointer;
 }
-.fb_customer_chat_bounce_out{
+.fb-customerchat{
     z-index:-1 !important;
 }
 
