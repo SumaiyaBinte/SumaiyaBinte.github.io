@@ -37,7 +37,7 @@ body {
    cursor: pointer;
 }
 .fb-customerchat{
-    z-index:-1 !important;
+    top:20px!important;
 }
 
 @media only screen and(max-width: 750px) {
